@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import headerImage from "../assets/headerImg.png";
 ---
 
 <header
@@ -21,7 +22,9 @@
       Start reading
     </button>
   </div>
-  <div class="absolute right-0 top-14">
-    <!-- todo: M animation -->
+  <div
+    class="hidden md:block absolute top-14 md:-right-72 lg:-right-36 xl:right-0"
+  >
+    <Image src={headerImage} alt="headerImg" width="585" height="462" />
   </div>
 </header>
