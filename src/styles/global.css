@@ -1,0 +1,101 @@
+@import url(https://db.onlinewebfonts.com/c/3eeb8419262f9ee7ebd9a036f644d586?family=GT+Super+Text+Black);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .speech-bubble {
+    position: relative;
+    background: #fff;
+    border-radius: 0.4em;
+    filter: drop-shadow(0 10px 8px rgba(14, 14, 14, 0.04))
+      drop-shadow(0 4px 3px rgba(14, 14, 14, 0.08))
+      drop-shadow(0 -4px 3px rgba(14, 14, 14, 0.08));
+  }
+
+  .speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right-color: #fff;
+    border-left: 0;
+    margin-top: -8px;
+    margin-left: -8px;
+  }
+}
+body {
+  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+@font-face {
+  font-family: 'GT Super';
+  font-weight: 400;
+  font-style: normal;
+  src: local('GT Super'), url('../../GT-Super-Text-Book.woff') format('woff');
+  font-display: swap;
+}
+
+.medium-font-serif {
+  font-family: 'GT Super', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.speech-bubble-right {
+  position: relative;
+  background: #fff;
+  border-radius: 0.4em;
+  filter: drop-shadow(0 10px 8px rgba(14, 14, 14, 0.04))
+    drop-shadow(0 4px 3px rgba(14, 14, 14, 0.08))
+    drop-shadow(0 -4px 3px rgba(14, 14, 14, 0.08));
+}
+
+.speech-bubble-right:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+.speech-bubble-left {
+  position: relative;
+  background: #fff;
+  border-radius: 0.4em;
+  filter: drop-shadow(0 10px 8px rgba(14, 14, 14, 0.04))
+    drop-shadow(0 4px 3px rgba(14, 14, 14, 0.08))
+    drop-shadow(0 -4px 3px rgba(14, 14, 14, 0.08));
+}
+
+.speech-bubble-left:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left-color: #fff;
+  border-right: 0;
+  margin-top: -8px;
+  margin-right: -8px;
+}
+
+/* .author-name:hover ~ .author-info {
+  display: block;
+  transition: 0.2s;
+} */
+
+.author-info:hover {
+  display: block;
+}

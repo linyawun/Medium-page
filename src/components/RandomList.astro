@@ -1,0 +1,181 @@
+---
+import RandomItem from "./RandomItem.astro";
+type IRandomData = Array<IRandomItem>;
+export type IRandomItem = {
+  authorName: string;
+  authorLogo: string;
+  publicationLogo: string;
+  isBookAuthor: boolean;
+  isStarAuthor: boolean;
+  isMemberOnly: boolean;
+  articleTitle: string;
+  publicationName: string;
+  articleTag: string;
+  subTitle?: string;
+  date: string;
+  readTime: number;
+  authorInfo: string;
+  authorFollowersNum: string;
+  articleImage: string;
+};
+const trendingData: IRandomData = [
+  {
+    authorName: "Clayton Moulynox",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*AZxiin1Cvws3J0TwNUP2sQ.png",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:64:64/1*9WOmBB5AYVxxg_03g7zstw.jpeg",
+    isBookAuthor: false,
+    isStarAuthor: true,
+    isMemberOnly: true,
+    articleTitle: "That Time My Kid Googled Me and I Was No Longer “Dad”",
+    subTitle: "The repercussions of your online presence as a parent",
+    publicationName: "ILLUMINATION",
+    date: "Sep 20",
+    readTime: 8,
+    authorInfo:
+      "Experience-based commentary on startups, tech, biz & life. Consults & invests @ startupfoundationsbuilder.com & mxgrowth.com. Ex-Microsoft, Ex-startup unicorn",
+    authorFollowersNum: "1.1K",
+    articleTag: "Parenting",
+    articleImage:
+      "https://miro.medium.com/v2/resize:fill:400:268/1*8vORDj4bueEGkeC6ov8aGg.png",
+  },
+  {
+    authorName: "Whitney Alese",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*4Sybq8pTkkfjqANAw9SiRA.jpeg",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:64:64/1*VXLgT3ilh1s060-Dcgl80Q.jpeg",
+    isBookAuthor: false,
+    isStarAuthor: true,
+    isMemberOnly: true,
+    articleTitle: "In Renaissance, Beyoncé makes culture reckon with Blue Ivy",
+    publicationName: "ZORA",
+    date: "Sep 26",
+    readTime: 4,
+    authorInfo:
+      "Whitney Alese is a writer & podcaster, featured in WIRED Magazine (Sept 2020) & I-D Magazine (Dec. 2021), and NBC (Jan 2023). She is based in Philadelphia.",
+    authorFollowersNum: "1.4K",
+    articleTag: "Beyonce",
+    articleImage:
+      "	https://miro.medium.com/v2/resize:fill:400:268/1*jCerKEP1Mscao2j73MTsEw.jpeg",
+  },
+  {
+    authorName: "Heather McLeod",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*pfjoZOu08t9b-HHXv68ETg.png",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:176:176/2*vlrMwXbkgyabw78QfUI1jQ.jpeg",
+    isBookAuthor: false,
+    isStarAuthor: true,
+    isMemberOnly: true,
+    articleTitle: "Finding your community at any age",
+    subTitle: "Finding & pursuing those sparks of connection",
+    publicationName: "Human Parts",
+    date: "Sep 19",
+    readTime: 3,
+    authorInfo:
+      "Writing about losing my young husband to cancer, grief, widowhood & this new, Plan B life. www.heathermcleod.ca https://www.buymeacoffee.com/heathermcleod",
+    authorFollowersNum: "1.3K",
+    articleTag: "Friendship",
+    articleImage:
+      "https://miro.medium.com/v2/resize:fill:400:268/0*ukd_ECs8LvyiuTG_",
+  },
+  {
+    authorName: "Jonathan Lethem",
+    publicationLogo: "",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*iudmnb-vrHQeHKc34ETv_A.jpeg",
+    isBookAuthor: true,
+    isStarAuthor: false,
+    isMemberOnly: false,
+    articleTitle: "Be Kind, Be Kind, Be Kind",
+    subTitle: "Henry James, Mr. Rogers, and the Long Middle",
+    publicationName: "",
+    date: "Sep 22",
+    readTime: 4,
+    authorInfo: "I write, helplessly.",
+    authorFollowersNum: "5.1K",
+    articleTag: "Henry James",
+    articleImage:
+      "https://miro.medium.com/v2/resize:fill:400:268/1*Z6IM5WZmOu73LRiaJ34nyA.png",
+  },
+  {
+    authorName: "Ema Dumitru",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*xxcVclxF3lUgYed6pne6JA.png",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:176:176/1*dc8FLAoKmCJwbt5EHuXNlw.jpeg",
+    isBookAuthor: false,
+    isStarAuthor: false,
+    isMemberOnly: true,
+    articleTitle: "Goodbye Is Your Eyes Closing Over My Life",
+    subTitle: "Poem",
+    publicationName: "Scribe",
+    date: "Sep 21",
+    readTime: 1,
+    authorInfo: "An Almost Made Up Poet",
+    authorFollowersNum: "1.3K",
+    articleTag: "Parenting",
+    articleImage:
+      "https://miro.medium.com/v2/resize:fill:400:268/1*ihKctoobU2Gf8ABlG5THOA.jpeg",
+  },
+  {
+    authorName: "Thomas Smith",
+    publicationLogo: "",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/2*3vJU4sgGd_CmFQFl4wH6-Q.jpeg",
+    isBookAuthor: false,
+    isStarAuthor: true,
+    isMemberOnly: true,
+    articleTitle: "The Disturbing Colonial History of Pumpkin Spice",
+    subTitle: "Genocide, slavery and spices",
+    publicationName: "",
+    date: "Sep 18",
+    readTime: 6,
+    authorInfo:
+      "CEO of Gado Images | Content Consultant | Covers tech, food, AI & photography | http://bayareatelegraph.com & http://lifetechshorts.com | tom@gadoimages.com",
+    authorFollowersNum: "36K",
+    articleTag: "Indigenous People",
+    articleImage:
+      "https://miro.medium.com/v2/resize:fill:400:268/1*1i9Zl37YY3UV8XEjVPb5tw.png",
+  },
+  {
+    authorName: "Tara Haelle",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*vu45QONxU50xw003T6me5A.jpeg",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:176:176/1*ymzvJVkAt-EcmXzgRm4wuw.jpeg",
+    isBookAuthor: false,
+    isStarAuthor: true,
+    isMemberOnly: true,
+    articleTitle:
+      "We’re starting to understand more of what causes long COVID brain fog",
+    subTitle:
+      "Not only did a new study identify two blood proteins linked to cognitive difficulties a year after COVID-19 infection, but the authors make a point to warn doctors against gaslighting patients who report brain fog.",
+    publicationName: "Long COVID Connection",
+    date: "Sep 13",
+    readTime: 7,
+    authorInfo:
+      "Tara Haelle is a science journalist, public speaker, and author of Vaccination Investigation and The Informed Parent. Follow her at @tarahaelle.",
+    authorFollowersNum: "16.4K",
+    articleTag: "Covid-19",
+    articleImage:
+      "https://miro.medium.com/v2/resize:fill:400:268/1*6nZUT6CkYE1frUF8eAVphw.jpeg",
+  },
+];
+---
+
+<section class="w-full lg:w-3/5 mt-10 lg:mt-0">
+  <ul class="flex flex-col gap-y-12 mb-14">
+    {trendingData.map((item) => <RandomItem itemInfo={item} />)}
+  </ul>
+  <div class="flex justify-center mb-2">
+    <button
+      type="button"
+      class="border border-gray-800 text-gray-700 hover:text-gray-900 text-sm py-2 px-3 rounded-full"
+    >
+      Load more stories</button
+    >
+  </div>
+</section>

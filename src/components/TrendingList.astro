@@ -1,0 +1,158 @@
+---
+import TrendingItem from "./TrendingItem.astro";
+type ITrendingData = Array<ITrendingItem>;
+export type ITrendingItem = {
+  indexLabel: string;
+  authorName: string;
+  authorLogo: string;
+  publicationLogo: string;
+  isBookAuthor: boolean;
+  isStarAuthor: boolean;
+  isMemberOnly: boolean;
+  articleTitle: string;
+  publicationName: string;
+  date: string;
+  readTime: number;
+  authorInfo: string;
+  authorFollowersNum: string;
+};
+const trendingData: ITrendingData = [
+  {
+    indexLabel: "01",
+    authorName: "M.G. Siegler",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*Qg4riJwwmYdIC_q7MaqKRA.png",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:64:64/1*wmB2xBsvxx76tREz-zekCw.png",
+    isBookAuthor: false,
+    isStarAuthor: true,
+    isMemberOnly: false,
+    articleTitle: "The Too-Slick Apple Event",
+    publicationName: "500ish",
+    date: "Sep 15",
+    readTime: 7,
+    authorInfo:
+      "Writer turned investor turned investor who writes. General Partner at GV. I blog to think.",
+    authorFollowersNum: "405K",
+  },
+  {
+    indexLabel: "02",
+    authorName: "Juntao Qiu",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*yAqDFIFA5F_NXalOJKz4TA.png",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:64:64/1*kLYYTxfVSAYAXxyfMrqYKA.png",
+    isBookAuthor: true,
+    isStarAuthor: true,
+    isMemberOnly: false,
+    articleTitle: "Why Web UI Development Is So Hard?",
+    publicationName: "ITNEXT",
+    date: "Sep 12",
+    readTime: 8,
+    authorInfo:
+      "I help people write better code. Developer | Author | Creator. https://juntao.substack.com/ @JuntaoQiu",
+    authorFollowersNum: "1.3K",
+  },
+  {
+    indexLabel: "03",
+    authorName: "Bryn Bodayle",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*MlNQKg-sieBGW5prWoe9HQ.jpeg",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:176:176/1*Mvz40LLgt-EWM70IcGeGLg.jpeg",
+    isBookAuthor: false,
+    isStarAuthor: false,
+    isMemberOnly: false,
+    articleTitle: "Unlocking SwiftUI at Airbnb",
+    publicationName: "The Airbnb Tech Blog",
+    date: "Sep 22",
+    readTime: 10,
+    authorInfo: "Staff iOS Engineer at Airbnb working on UI tools.",
+    authorFollowersNum: "98",
+  },
+  {
+    indexLabel: "04",
+    authorName: "Katie Cooper",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*mDhF9X4VO0rCrJvWFatyxg.png",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:176:176/1*Ek5pAZRjYuS9WQVeodplMQ.png",
+    isBookAuthor: false,
+    isStarAuthor: false,
+    isMemberOnly: false,
+    articleTitle: "Color for brand designers working with product teams",
+    publicationName: "UX Collective",
+    date: "Sep 21",
+    readTime: 5,
+    authorInfo:
+      "Sr. Product Designer at Forge Studio working on building products and design systems.",
+    authorFollowersNum: "42",
+  },
+  {
+    indexLabel: "05",
+    authorName: "The Useful Tech",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*qVYCB8Xw85QdWOPEKZqF_A.png",
+    authorLogo:
+      "https://miro.medium.com/v2/resize:fill:176:176/1*huaATcaUP76fICcfufubLw.png",
+    isBookAuthor: false,
+    isStarAuthor: true,
+    isMemberOnly: true,
+    articleTitle:
+      "I Tried the New AirPods Pro Features, and I Absolutely Love It",
+    publicationName: "Mac O’Clock",
+    date: "Sep 18",
+    readTime: 8,
+    authorInfo: "Everything about Apple!",
+    authorFollowersNum: "28K",
+  },
+  {
+    indexLabel: "06",
+    authorName: "Will Lockett",
+    publicationLogo:
+      "https://miro.medium.com/v2/resize:fill:40:40/1*EetZyjDw-19wRRBzc6fSMA.png",
+    authorLogo:
+      "	https://miro.medium.com/v2/resize:fill:176:176/1*V0qWMQ8V5_NaF9yUoHAdyg.jpeg",
+    isBookAuthor: true,
+    isStarAuthor: true,
+    isMemberOnly: false,
+    articleTitle: "Unlocking SwiftUI at Airbnb",
+    publicationName: "Predict",
+    date: "Sep 14",
+    readTime: 6,
+    authorInfo:
+      "Journalist passionate about cutting edge technology, space and fighting climate change. Buy my latest book at https://www.amazon.com/dp/B0BRPPVR5Z",
+    authorFollowersNum: "158K",
+  },
+];
+---
+
+<div class="border-b border-gray-100 lg:mb-6">
+  <div
+    class="md:max-w-screen-xl container px-6 md:px-14 xl:px-10 mx-auto py-10"
+  >
+    <div class="flex items-center">
+      <svg width="28" height="29" viewBox="0 0 28 29" fill="none" class="me-2">
+        <path fill="#fff" d="M0 .8h28v28H0z"></path>
+        <g opacity="0.8" clip-path="url(#trending_svg__clip0)">
+          <path fill="#fff" d="M4 4.8h20v20H4z"></path>
+          <circle cx="14" cy="14.79" r="9.5" stroke="#000"></circle>
+          <path
+            d="M5.46 18.36l4.47-4.48M9.97 13.87l3.67 3.66M13.67 17.53l5.1-5.09M16.62 11.6h3M19.62 11.6v3"
+            stroke="#000"
+            stroke-linecap="round"></path>
+        </g>
+        <defs>
+          <clipPath id="trending_svg__clip0">
+            <path fill="#fff" transform="translate(4 4.8)" d="M0 0h20v20H0z"
+            ></path>
+          </clipPath>
+        </defs>
+      </svg>
+      <h5 class="font-medium">Trending on Medium</h5>
+    </div>
+    <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+      {trendingData.map((item) => <TrendingItem itemInfo={item} />)}
+    </ul>
+  </div>
+</div>

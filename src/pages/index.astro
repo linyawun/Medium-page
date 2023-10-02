@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Header from "../components/Header.astro";
+import TrendingList from "../components/TrendingList.astro";
+import RandomList from "../components/RandomList.astro";
+import DiscoverTags from "../components/DiscoverTags.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Medium – Where good ideas find you.">
+  <Navbar />
+  <Header />
+  <main>
+    <TrendingList />
+
+    <div
+      class="md:max-w-screen-xl container px-6 md:px-14 xl:px-10 mx-auto py-10"
+    >
+      <div
+        class="flex flex-wrap-reverse lg:flex-nowrap justify-between lg:items-start relative"
+      >
+        <RandomList />
+        <DiscoverTags />
+      </div>
+    </div>
+
+    <!-- <ul role="list" class="link-card-grid">
+			<Card
+				href="https://docs.astro.build/"
+				title="Documentation"
+				body="Learn how Astro works and explore the official API docs."
+			/>
+			<Card
+				href="https://astro.build/integrations/"
+				title="Integrations"
+				body="Supercharge your project with new frameworks and libraries."
+			/>
+			<Card
+				href="https://astro.build/themes/"
+				title="Themes"
+				body="Explore a galaxy of community-built starter themes."
+			/>
+			<Card
+				href="https://astro.build/chat/"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
+			/>
+		</ul> -->
+  </main>
+  <Footer />
+</Layout>
