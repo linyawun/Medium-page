@@ -1,6 +1,6 @@
 # Medium Layout Page
 > 此網頁為模仿 Medium 首頁的網頁切版練習
-- [線上觀看連結](linyawun.github.io/Medium-page/)
+- [線上觀看連結](https://linyawun.github.io/Medium-page/)
 
 
 ## 安裝
