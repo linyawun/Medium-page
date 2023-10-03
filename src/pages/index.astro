@@ -6,6 +6,7 @@ import TrendingList from "../components/TrendingList.astro";
 import RandomList from "../components/RandomList.astro";
 import DiscoverTags from "../components/DiscoverTags.astro";
 import Footer from "../components/Footer.astro";
+import JoinMediumModal from "../components/JoinMediumModal.astro";
 import "../styles/global.css";
 ---
 
@@ -14,7 +15,6 @@ import "../styles/global.css";
   <Header />
   <main>
     <TrendingList />
-
     <div
       class="md:max-w-screen-xl container px-6 md:px-14 xl:px-10 mx-auto py-10"
     >
@@ -25,29 +25,7 @@ import "../styles/global.css";
         <DiscoverTags />
       </div>
     </div>
-
-    <!-- <ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul> -->
   </main>
   <Footer />
+  <JoinMediumModal />
 </Layout>
