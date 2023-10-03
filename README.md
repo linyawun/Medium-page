@@ -1,54 +1,46 @@
-# Astro Starter Kit: Basics
+# Medium Layout Page
+> 此網頁為模仿 Medium 首頁的網頁切版練習
+- [線上觀看連結](linyawun.github.io/Medium-page/)
 
-```sh
-npm create astro@latest -- --template basics
+
+## 安裝
+以下將會引導你如何安裝此專案到你的電腦上。
+> 請先安裝 [Node.js](https://nodejs.org/zh-tw/download)，Node.js 版本建議為：`18.12.0` 以上
+### 取得專案
+```bash
+git clone https://github.com/linyawun/Medium-page.git
+```
+### 移動到專案內
+```bash
+cd Medium-page
+```
+### 安裝套件
+```bash
+npm install
+```
+### 運行專案
+```bash
+npm run dev
+```
+### 開啟專案
+在瀏覽器網址列輸入以下即可看到畫面
+```
+http://localhost:8000/
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 資料夾說明
+- public - 靜態檔案放置處
+- src
+  - assets - 圖片放置處
+  - components - 網頁元件放置處
+  - layouts - 共用版型
+  - pages - 頁面放置處
+  - styles - css 樣式放置處
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 專案技術
+- tailwindcss v3.3.3
+- astro v3.1.2
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 聯絡作者
+你可以透過以下方式與我聯絡
+- email: linyawun031@gmail.com
