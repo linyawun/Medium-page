@@ -39,9 +39,10 @@ body {
     Cantarell,
     "Open Sans",
     "Helvetica Neue",
+    Helvetica,
+    Arial,
     sans-serif;
 }
-
 @font-face {
   font-family: "GT Super";
   font-weight: 400;
@@ -118,4 +119,21 @@ body {
 
 .author-info:hover {
   display: block;
+}
+
+.modal-panel-close {
+  @apply opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95;
+}
+
+.modal-panel-open {
+  @apply opacity-100 translate-y-0 sm:scale-100;
+}
+
+.modal {
+  @apply ease-out duration-300;
+  @apply opacity-0 translate-y-4 sm:translate-y-0 sm:scale-90;
+}
+
+.modal.active {
+  @apply opacity-100 translate-y-0 sm:scale-100;
 }

@@ -1,0 +1,142 @@
+---
+
+---
+
+<div
+  class="relative z-10 hidden modal-wrapper"
+  aria-labelledby="join-Medium"
+  role="dialog"
+  aria-modal="true"
+>
+  <!--
+    Background backdrop, show/hide based on modal state.
+
+    Entering: "ease-out duration-300"
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "ease-in duration-200"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+  <div class="fixed inset-0 bg-white bg-opacity-90 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 w-screen">
+    <div class="flex min-h-full justify-center items-center" data-modal>
+      <!--
+        Modal panel, show/hide based on modal state.
+
+        Entering: "ease-out duration-300"
+          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          To: "opacity-100 translate-y-0 sm:scale-100"
+        Leaving: "ease-in duration-200"
+          From: "opacity-100 translate-y-0 sm:scale-100"
+          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      -->
+      <div
+        class="modal relative flex items-center justify-center h-screen md:h-[98vh] w-full md:w-[600px] lg:w-[678px] transform overflow-hidden rounded-md bg-white text-left shadow-xl transition-all"
+      >
+        <div class="text-center flex flex-col items-center bg-white w-3/4">
+          <h2 class="medium-font-serif text-[26px] font-light mb-20">
+            Join Medium.
+          </h2>
+          <ul class="flex flex-col gap-y-3 mb-10">
+            <li>
+              <button
+                type="button"
+                class="border border-black rounded-full py-2 w-[300px] relative flex justify-center"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="absolute left-2"
+                  ><g fill-rule="evenodd" clip-rule="evenodd"
+                    ><path
+                      d="M20.64 12.2c0-.63-.06-1.25-.16-1.84H12v3.49h4.84a4.14 4.14 0 0 1-1.8 2.71v2.26h2.92a8.78 8.78 0 0 0 2.68-6.61z"
+                      fill="#4285F4"></path><path
+                      d="M12 21a8.6 8.6 0 0 0 5.96-2.18l-2.91-2.26a5.41 5.41 0 0 1-8.09-2.85h-3v2.33A9 9 0 0 0 12 21z"
+                      fill="#34A853"></path><path
+                      d="M6.96 13.71a5.41 5.41 0 0 1 0-3.42V7.96h-3a9 9 0 0 0 0 8.08l3-2.33z"
+                      fill="#FBBC05"></path><path
+                      d="M12 6.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58A9 9 0 0 0 3.96 7.96l3 2.33A5.36 5.36 0 0 1 12 6.6z"
+                      fill="#EA4335"></path></g
+                  ></svg
+                >
+                 Sign up with Google</button
+              >
+            </li>
+            <li>
+              <button
+                type="button"
+                class="border border-black rounded-full py-2 w-[300px] relative flex justify-center"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="absolute left-2"
+                  ><path
+                    d="M22 12a10 10 0 1 0-11.56 9.88V14.9H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.63.78-1.63 1.57V12h2.78l-.45 2.9h-2.33v6.98A10 10 0 0 0 22 12z"
+                    fill="#1877F2"></path><path
+                    d="M15.9 14.9l.44-2.9h-2.78v-1.87c0-.8.39-1.57 1.63-1.57h1.26V6.1s-1.14-.2-2.24-.2c-2.28 0-3.77 1.4-3.77 3.9V12H7.9v2.9h2.54v6.98a10.07 10.07 0 0 0 3.12 0V14.9h2.33z"
+                    fill="#fff"></path></svg
+                >
+                 Sign up with Facebook</button
+              >
+            </li>
+            <li>
+              <button
+                type="button"
+                class="border border-black rounded-full py-2 w-[300px] relative flex justify-center"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="absolute left-2"
+                  ><g stroke="#242424"
+                    ><rect x="3.5" y="5.5" width="17" height="13" rx="1"
+                    ></rect><path d="M3.5 8l8.5 6 8.5-6" stroke-linecap="round"
+                    ></path></g
+                  ></svg
+                >
+                 Sign up with email</button
+              >
+            </li>
+          </ul>
+          <p class="mb-24">
+            Already have an account? <a
+              href="#"
+              class="text-green-700 font-bold">Sign in</a
+            >
+          </p>
+          <p class="text-gray-500 text-[13px]">
+            Click “Sign Up” to agree to Medium’s <a href="#" class="underline"
+              >Terms of Service</a
+            > and acknowledge that Medium’s <a href="#" class="underline"
+              >Privacy Policy</a
+            > applies to you.
+          </p>
+        </div>
+        <div class="absolute top-0 right-0 p-3">
+          <button class="button">
+            <svg
+              width="29"
+              height="29"
+              class="fill-gray-500 hover:fill-gray-900"
+              data-closeModalBtn
+              ><path
+                d="M20.13 8.11l-5.61 5.61-5.6-5.61-.81.8 5.61 5.61-5.61 5.61.8.8 5.61-5.6 5.61 5.6.8-.8-5.6-5.6 5.6-5.62"
+                fill-rule="evenodd"></path></svg
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script></script>

@@ -42,10 +42,10 @@
 </nav>
 
 <script>
+  const getStartBtn = document.querySelector("[data-getStartBtn]");
   document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector("nav");
     const header = document.querySelector("header");
-    const getStartBtn = document.querySelector("[data-getStartBtn]");
     const navbarHeight = navbar.clientHeight;
     function calculateHeaderBottom() {
       return header.getBoundingClientRect().bottom + window.scrollY;
@@ -73,5 +73,28 @@
     });
 
     checkScrollPosition();
+  });
+
+  const modalWrapper = document.querySelector(".modal-wrapper");
+  const modal = document.querySelector(".modal");
+  const modalOutside = document.querySelector("[data-modal]");
+  const closeModalBtn = document.querySelector("[data-closeModalBtn]");
+
+  getStartBtn.addEventListener("click", () => {
+    modalWrapper.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      modal.classList.add("active");
+    }, 100);
+  });
+
+  modalWrapper.addEventListener("click", (event) => {
+    if (event.target === modalOutside || event.target === closeModalBtn) {
+      modal.classList.remove("active");
+      document.body.style.overflow = "auto";
+      setTimeout(() => {
+        modalWrapper.classList.add("hidden");
+      }, 100);
+    }
   });
 </script>
