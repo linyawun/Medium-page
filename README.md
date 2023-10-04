@@ -1,6 +1,10 @@
 # Medium Layout Page
+<img width="1423" alt="image" src="https://github.com/linyawun/Medium-page/assets/29305653/2fd1a1df-38d8-4f07-82d7-9b9ccb60d73a">
+
 > 此網頁為模仿 Medium 首頁的網頁切版練習
 - [線上觀看連結](https://linyawun.github.io/Medium-page/)
+
+## 畫面
 
 
 ## 安裝
