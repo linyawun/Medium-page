@@ -5,7 +5,12 @@
 - [線上觀看連結](https://linyawun.github.io/Medium-page/)
 
 ## 畫面
-
+- author info tooltip
+  ![image](https://github.com/linyawun/Medium-page/assets/29305653/6e93e941-b8b0-4124-bdf8-3c31809e26ac)
+- aside section sticky
+  ![image](https://github.com/linyawun/Medium-page/assets/29305653/035b1994-bf3d-4078-a349-bc8871303af1)
+- join Medium Modal
+  ![image](https://github.com/linyawun/Medium-page/assets/29305653/5de4b0bb-a50b-43fe-9c63-74f7922b6d4a)
 
 ## 安裝
 以下將會引導你如何安裝此專案到你的電腦上。
